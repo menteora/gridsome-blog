@@ -1,0 +1,18 @@
+{
+  app: {
+    title: 'Dinamicamente.org Blog',
+    metaContent: 'Blog dedicato alla passione per le nuove tecnologie e per lo sviluppo web.',
+    GoogleAnalyticsId: 'UA-107595768-1'
+  },
+  deploy: {
+    username: '',
+    password: '',
+    host: 'ftp.',
+    port: 21,
+    localRoot: '/dist',
+    remoteRoot: '/public_html/nuxt/',
+    include: ['*'],
+    deleteRemote: true,
+    forcePasv: true
+  }
+}
