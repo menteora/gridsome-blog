@@ -24,6 +24,7 @@ query Post ($id: String!) {
         date (format: "YYYY-MM-DDTHH:mm:ss.sssZ")
         timeToRead
         description
+        cover_image
         path
         tags {
           id

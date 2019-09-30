@@ -3,6 +3,7 @@
 
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+var appConfig = require('config').get('app')
 
 module.exports = {
   siteName: 'Dinamicamente.org',
@@ -16,6 +17,12 @@ module.exports = {
   },
 
   plugins: [
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: appConfig.get('GoogleAnalyticsId')
+      }
+    },
     {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',

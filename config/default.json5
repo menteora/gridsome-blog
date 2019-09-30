@@ -2,7 +2,7 @@
   app: {
     title: 'Dinamicamente.org Blog',
     metaContent: 'Blog dedicato alla passione per le nuove tecnologie e per lo sviluppo web.',
-    GoogleAnalyticsId: 'UA-107595768-1'
+    GoogleAnalyticsId: 'UA-XXXXXXXXX-X'
   },
   deploy: {
     username: '',
@@ -10,7 +10,7 @@
     host: 'ftp.',
     port: 21,
     localRoot: '/dist',
-    remoteRoot: '/public_html/nuxt/',
+    remoteRoot: '/public_html/',
     include: ['*'],
     deleteRemote: true,
     forcePasv: true

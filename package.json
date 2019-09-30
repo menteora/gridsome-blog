@@ -5,7 +5,8 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "deploy": "node deploy"
+    "deploy": "node deploy",
+    "shot": "gridsome build && node deploy"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
