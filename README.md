@@ -19,7 +19,7 @@ A simple, hackable & minimalistic **multilanguage** starter for Gridsome that us
 
 ## Online Blog URL
 
-https://www.dinamicamente.org
+[https://www.dinamicamente.org](https://www.dinamicamente.org/?utm_source=github&utm_medium=link&utm_campaign=gridsome_multilanguage_site&utm_content=gihub_gridsomeblog_repo)
 
 ## Install
 
