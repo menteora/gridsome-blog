@@ -1,8 +1,14 @@
-# Gridsome Blog Starter
 
-> A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.
+# Dinamicamente.org & Gridsome Multilanguage Blog Starter
+A simple, hackable & minimalistic **multilanguage** starter for Gridsome that uses Markdown for content
 
 ## Features
+### Our Blog Features
+
+- Multilanguage Tags, Internal Pages and Articles
+
+### Standard from blog starter template
+
 - Beautiful and simple design.
 - Markdown for content.
 - Tags support.
@@ -11,9 +17,9 @@
 - 100, 100, 100, 100 score on Google Lighthouse.
 - Uses same front-matter fields as Dev.to.
 
-## Demo URL
+## Online Blog URL
 
-https://gridsome-starter-blog.netlify.com
+https://www.dinamicamente.org
 
 ## Install
 
