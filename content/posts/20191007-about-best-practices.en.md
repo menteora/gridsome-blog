@@ -4,7 +4,7 @@ date: 2019-10-07
 lang: en
 author: gabrieletassoni
 published: true
-tags: ['Best Practice', 'Programming', 'Better Programming', 'Happiness', 'KISS', 'DRY']
+tags: ['Best Practice', 'Programming', 'Better Programming', 'Happiness', 'KISS', 'DRY', 'Pragmatic']
 series: false
 cover_image: ./images/best-practices.jpg
 canonical_url: false
