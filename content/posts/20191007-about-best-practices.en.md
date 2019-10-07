@@ -12,7 +12,7 @@ description: An Excursus on why you NEED to adopt Best Practices.
 ---
 ## Why do I need Best Practices?
 
-On media, you can read more and more about the subject. From IT and DEV subjects to anything ingegneristic related, and a lot of times you can find it treated **speaking out of turn** and **missing the target** while using the mythical Best Practices.
+On the interweb, you can read more and more about this topic. From IT and DEV subjects to anything ingegneristic related, and a lot of times you read about it, you can find it **spoken out of turn** and **missing the target** while using the mythical Best Practices.
 
 The main point, that should be always be taken into account is that a _practice_, to be a **Best Practice**, must be ***sensible*** (and you'll train the practical sense which will help you on exercise the right discernment), has to be general enough to be applied at a wide range of scopes, but small and atomic enough to be managed without an effort; the aim behind **agile workout** is obviously not to hurt yourself, just a bit like _āsana_ in yoga: well defined practices, which would lead to visible improvements in measurable times, therefore viewable in their entirety and easy to apply repeatedly and as much as possible in each phase of project management: from analysis to development.
 
