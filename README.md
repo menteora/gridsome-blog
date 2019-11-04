@@ -33,3 +33,7 @@ A simple, hackable & minimalistic **multilanguage** starter for Gridsome that us
 2. `cd my-gridsome-site` to open folder
 3. `gridsome develop` to start local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
+
+# Share the link in the right way:
+
+Go to https://ga-dev-tools.appspot.com/campaign-url-builder/ and create the trackable link.
