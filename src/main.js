@@ -19,6 +19,9 @@ import messages from '~/locale'
 import CountryFlag from 'vue-country-flag'
 
 import VueMoment from 'vue-moment'
+
+import VuetifyExtra from '@menteora/vuetify-extra'
+
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 export default function (Vue, { router, head, appOptions, isClient }) {
 
@@ -27,6 +30,7 @@ export default function (Vue, { router, head, appOptions, isClient }) {
   Vue.component('country-flag', CountryFlag)
   
   Vue.use(Vuetify)
+  Vue.use(VuetifyExtra)
   Vue.use(VueI18n)
   Vue.use(VueMoment);
 
