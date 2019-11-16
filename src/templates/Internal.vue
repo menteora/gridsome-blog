@@ -1,5 +1,19 @@
 <template>
   <Layout>
+    <card-page title-outside>
+      <template v-slot:title>
+        <div class="post-title">
+          <h1 class="post-title__text">{{ $page.internal.edges[0].node.description }}</h1>
+          <PostMeta :post="$page.internal.edges[0].node" />
+        </div>
+      </template>
+      <g-image
+        alt="Cover image"
+        v-if="$page.internal.edges[0].node.coverImage"
+        :src="$page.internal.node.coverImage"
+      />
+      <v-card-text class="text--primary body-1" v-html="$page.internal.edges[0].node.content"></v-card-text>
+    </card-page>
     <div class="post-title">
       <h1 class="post-title__text">{{ $page.internal.edges[0].node.description }}</h1>
 
@@ -30,6 +44,9 @@ export default {
   metaInfo() {
     return {
       title: this.$page.internal.edges[0].node.title,
+      htmlAttrs: {
+        lang: this.$root.$i18n.locale
+      },
       meta: [
         {
           name: "description",
@@ -97,17 +114,5 @@ query Internal ($path: String!) {
       max-width: none;
     }
   }
-}
-
-.post-comments {
-  padding: calc(var(--space) / 2);
-
-  &:empty {
-    display: none;
-  }
-}
-
-.post-author {
-  margin-top: calc(var(--space) / 2);
 }
 </style>

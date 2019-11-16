@@ -1,0 +1,11 @@
+{
+  "autorun": true,
+  "terminals": [
+    {
+      "name": "Go Container",
+      "description": "Run Go Program",
+      "focus": true,
+      "commands": ["go","vcgb"]
+    }
+  ]
+}

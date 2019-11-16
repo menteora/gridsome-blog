@@ -46,8 +46,13 @@ export default {
     HomeLogo,
     PostCard
   },
-  metaInfo: {
-    title: ""
+  metaInfo() {
+    return {
+    title: "",
+    htmlAttrs: {
+        lang: this.$root.$i18n.locale
+      },
+    }
   }
 };
 </script>
