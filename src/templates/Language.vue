@@ -5,11 +5,7 @@
 
     <!-- List posts -->
     <div class="posts">
-      <PostCard
-        v-for="edge in $page.posts.edges"
-        :key="edge.node.id"
-        :post="edge.node"
-      />
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>
 </template>
@@ -45,14 +41,6 @@ export default {
   components: {
     HomeLogo,
     PostCard
-  },
-  metaInfo() {
-    return {
-    title: "",
-    htmlAttrs: {
-        lang: this.$root.$i18n.locale
-      },
-    }
   }
 };
 </script>
