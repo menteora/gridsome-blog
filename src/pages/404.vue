@@ -27,3 +27,12 @@
   </Layout>
 </template>
 
+<script>
+export default {
+  metaInfo: {
+    htmlAttrs: {
+      lang: ""
+    }
+  }
+};
+</script>

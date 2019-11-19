@@ -17,6 +17,7 @@ query Tag ($path: String!) {
           title
           path
           description
+          lang
           }
         }
       }
@@ -30,6 +31,13 @@ export default {
   components: {
     Author,
     PostCard
+  },
+  metaInfo() {
+    return {
+      htmlAttrs: {
+        lang: this.$page.tag.posts[0].lang
+      }
+    };
   }
 };
 </script>

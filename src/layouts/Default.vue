@@ -45,13 +45,6 @@ export default {
     CookieLaw
   },
   mounted: function() {},
-  /*
-  metaInfo: {
-      htmlAttrs: {
-        lang: this.$root.$i18n.locale
-      }
-    }
-  */
 };
 </script>
 

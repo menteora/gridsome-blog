@@ -27,6 +27,9 @@ export default {
   metaInfo() {
     return {
       title: this.$page.internal.edges[0].node.title,
+      htmlAttrs: {
+        lang: this.$page.internal.edges[0].node.lang
+      },
       meta: [
         {
           name: "description",
@@ -47,6 +50,7 @@ query Internal ($path: String!) {
         content
         title
         description
+        lang
       }
     }
   }

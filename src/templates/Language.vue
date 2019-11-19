@@ -22,6 +22,7 @@ query Post ($id: String!) {
         description
         cover_image
         path
+        lang
         tags {
           id
           title
@@ -41,6 +42,13 @@ export default {
   components: {
     HomeLogo,
     PostCard
+  },
+  metaInfo() {
+    return {
+      htmlAttrs: {
+        lang: this.$page.posts.edges[0].node.lang
+      }
+    };
   }
 };
 </script>
