@@ -14,10 +14,11 @@ description: Un articoletto defaticante su una cosina base base e molto specific
 Il nostro NAS Synology riserva la porta 80 per il proprio nginx interno e non permette, a meno di smanettare con i file di confgurazione di nginx o le controparti [mustache](http://mustache.github.io/), di usarla per nessun'altro [demone](https://it.wikipedia.org/wiki/Demone_%28informatica%29).
 Il dubbio che a un aggiornamento del sistema le modifiche non permangano resta, quindi... Come facciamo a prendere possesso della porta in una maniera persistente?
 
-Si, sicuramente non usando la GUI DSM, quindi... Sfoggiamo un po' il nostro **shell-fu**.
-![Shell-fu at it's best](./images/picard.gif){ width=100% }
+Si, sicuramente non usando la GUI DSM, quindi... Sfoggiamo un po' del nostro miglior **shell-fu**, come il caro Capt. Picard è pronto a mostrarci. ;-)
 
-Prima di tutto, installate [Nano](https://synocommunity.com/package/nano), ok lo **shell-fu**, ma proprio far fatica usando vi, per queste cosine minime non ci sta... [Nano](https://synocommunity.com/package/nano) è presente nel [package manager](https://www.synology.com/en-global/knowledgebase/DSM/help/DSM/PkgManApp/PackageCenter_desc) del vostro Synology.
+![Shell-fu at it's best](./images/picard.gif)
+
+Prima di tutto, installate [Nano](https://synocommunity.com/package/nano)... Ok, va bene lo **shell-fu**, ma proprio far fatica usando vi, per queste cosine minime non ci sta... [Nano](https://synocommunity.com/package/nano) è presente nel [package manager](https://www.synology.com/en-global/knowledgebase/DSM/help/DSM/PkgManApp/PackageCenter_desc) del vostro Synology.
 
 Certamente dovrete [attivare SSH](https://www.synology.com/it-it/knowledgebase/DSM/tutorial/General_Setup/How_to_login_to_DSM_with_root_permission_via_SSH_Telnet) e raggiungere la shell del vostro Synology con un comando tipo: 
 ```bash

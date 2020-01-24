@@ -26,8 +26,8 @@
     "vuetify": "^2.1.14"
   },
   "devDependencies": {
+    "ftp-deploy": "^2.3.6",
     "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
-    "ftp-deploy": "^2.3.6"
+    "sass-loader": "^8.0.0"
   }
 }

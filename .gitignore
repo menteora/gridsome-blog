@@ -10,3 +10,6 @@ dist
 # Config File
 config/*
 !config/default.*
+
+package-lock.json
+yarn.lock
