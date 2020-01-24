@@ -1,22 +1,19 @@
 <template>
   <Layout>
-    <div class="post-title">
-      <h1 class="post-title__text">{{ $page.internal.edges[0].node.description }}</h1>
-
-      <PostMeta :post="$page.internal.edges[0].node" />
-    </div>
-
-    <div class="post content-box">
-      <div class="post__header">
-        <g-image
-          alt="Cover image"
-          v-if="$page.internal.edges[0].node.coverImage"
-          :src="$page.internal.node.coverImage"
-        />
-      </div>
-
-      <div class="post__content" v-html="$page.internal.edges[0].node.content" />
-    </div>
+    <card-page title-position="outside">
+      <template v-slot:outside>
+        <div class="post-title">
+          <h1 class="post-title__text">{{ $page.internal.edges[0].node.description }}</h1>
+          <PostMeta :post="$page.internal.edges[0].node" />
+        </div>
+      </template>
+      <g-image
+        alt="Cover image"
+        v-if="$page.internal.edges[0].node.coverImage"
+        :src="$page.internal.node.coverImage"
+      />
+      <v-card-text class="text--primary body-1" v-html="$page.internal.edges[0].node.content"></v-card-text>
+    </card-page>
   </Layout>
 </template>
 
@@ -30,6 +27,9 @@ export default {
   metaInfo() {
     return {
       title: this.$page.internal.edges[0].node.title,
+      htmlAttrs: {
+        lang: this.$page.internal.edges[0].node.lang
+      },
       meta: [
         {
           name: "description",
@@ -50,6 +50,7 @@ query Internal ($path: String!) {
         content
         title
         description
+        lang
       }
     }
   }
@@ -97,17 +98,5 @@ query Internal ($path: String!) {
       max-width: none;
     }
   }
-}
-
-.post-comments {
-  padding: calc(var(--space) / 2);
-
-  &:empty {
-    display: none;
-  }
-}
-
-.post-author {
-  margin-top: calc(var(--space) / 2);
 }
 </style>

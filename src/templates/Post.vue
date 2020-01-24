@@ -1,12 +1,9 @@
 <template>
   <Layout>
     <div class="post-title">
-      <h1 class="post-title__text">
-        {{ $page.post.title }}
-      </h1>
+      <h1 class="post-title__text">{{ $page.post.title }}</h1>
 
       <PostMeta :post="$page.post" />
-
     </div>
 
     <div class="post content-box">
@@ -25,14 +22,14 @@
       <!-- Add comment widgets here -->
     </div>
 
-    <Author class="post-author" :author="$page.post.author"/>
+    <Author class="post-author" :author="$page.post.author" />
   </Layout>
 </template>
 
 <script>
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
-import Author from '~/components/Author.vue'
+import PostMeta from "~/components/PostMeta";
+import PostTags from "~/components/PostTags";
+import Author from "~/components/Author.vue";
 
 export default {
   components: {
@@ -40,18 +37,22 @@ export default {
     PostMeta,
     PostTags
   },
-  metaInfo () {
+
+  metaInfo() {
     return {
       title: this.$page.post.title,
+      htmlAttrs: {
+        lang: this.$page.post.lang
+      },
       meta: [
         {
-          name: 'description',
+          name: "description",
           content: this.$page.post.description
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <page-query>
@@ -81,15 +82,12 @@ query Post ($id: ID!) {
 </page-query>
 
 <style lang="scss">
-
-
 .post-title {
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   text-align: center;
 }
 
 .post {
-
   &__header {
     width: calc(100% + var(--space) * 2);
     margin-left: calc(var(--space) * -1);

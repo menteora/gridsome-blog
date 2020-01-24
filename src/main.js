@@ -28,7 +28,7 @@ export default function (Vue, { router, head, appOptions, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('country-flag', CountryFlag)
-  
+
   Vue.use(Vuetify)
   Vue.use(VuetifyExtra)
   Vue.use(VueI18n)

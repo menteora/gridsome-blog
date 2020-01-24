@@ -5,11 +5,7 @@
 
     <!-- List posts -->
     <div class="posts">
-      <PostCard
-        v-for="edge in $page.posts.edges"
-        :key="edge.node.id"
-        :post="edge.node"
-      />
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>
 </template>
@@ -26,6 +22,7 @@ query Post ($id: String!) {
         description
         cover_image
         path
+        lang
         tags {
           id
           title
@@ -46,8 +43,12 @@ export default {
     HomeLogo,
     PostCard
   },
-  metaInfo: {
-    title: ""
+  metaInfo() {
+    return {
+      htmlAttrs: {
+        lang: this.$page.posts.edges[0].node.lang
+      }
+    };
   }
 };
 </script>

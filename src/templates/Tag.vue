@@ -17,6 +17,7 @@ query Tag ($path: String!) {
           title
           path
           description
+          lang
           }
         }
       }
@@ -31,35 +32,12 @@ export default {
     Author,
     PostCard
   },
-  metaInfo: {
-    title: "Hello, world!"
-  },
-  data() {
+  metaInfo() {
     return {
-      selected_language: "all"
-    };
-  },
-  async mounted() {
-    this.selected_language = this.$root.$i18n.locale;
-  },
-  computed: {
-    filteredPosts() {
-      var posts;
-      switch (this.selected_language) {
-        case "all":
-          posts = this.$page.posts.edges;
-          break;
-        case "en":
-          posts = this.$page.posts_en.edges;
-          break;
-        case "it":
-          posts = this.$page.posts_it.edges;
-          break;
-        default:
-          posts = this.$page.posts_en.edges;
+      htmlAttrs: {
+        lang: this.$page.tag.posts[0].lang
       }
-      return posts;
-    }
+    };
   }
 };
 </script>

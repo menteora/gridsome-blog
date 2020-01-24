@@ -44,7 +44,7 @@ export default {
     LocaleChanger,
     CookieLaw
   },
-  mounted: function() {}
+  mounted: function() {},
 };
 </script>
 

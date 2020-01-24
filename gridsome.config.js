@@ -6,7 +6,7 @@
 var appConfig = require('config').get('app')
 
 module.exports = {
-  siteUrl: 'www.dinamicamente.org',
+  siteUrl: 'https://www.dinamicamente.org',
   siteName: 'Dinamicamente.org',
   siteDescription: 'Geeky posts in shuffle mode',
 
@@ -24,9 +24,8 @@ module.exports = {
         id: appConfig.get('GoogleAnalyticsId')
       }
     },
-    {
-      use: '@gridsome/plugin-sitemap',
-    },
+    '@gridsome/plugin-sitemap',
+    'gridsome-plugin-robots-txt',
     {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
