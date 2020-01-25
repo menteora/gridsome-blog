@@ -4,7 +4,7 @@ date: 2020-01-24
 lang: it
 author: gabrieletassoni
 published: true
-tags: ['Hacking', 'IT', 'Shell', 'Bash', 'Synology', "NAS", "HOWTO", "iptables", "Home Automation", "Domotica", "Supervision"]
+tags: ['hacking', 'it', 'openhab', 'shell', 'bash', 'synology', "nas", "howto", "iptables", "homeautomation", "domotica", "supervisor"]
 series: false
 cover_image: ./images/home-automation.jpg
 canonical_url: false
